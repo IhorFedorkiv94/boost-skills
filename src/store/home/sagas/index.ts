@@ -5,6 +5,7 @@ import {activateHomePageType} from "../actions";
 
 //eslint-disable-next-line @typescript-eslint/explicit-function-return-type
 export function* workerHomePage(action: GenericAction<PayloadWithCallbacks<boolean>>) {
+  // test
   yield put({
     type: activateHomePageType.SUCCESS,
     payload: action.payload.data
